@@ -10,7 +10,7 @@ High-frequency monitoring of neural-network representational dimensionality duri
 [![CI](https://img.shields.io/github/actions/workflow/status/groundlens-dev/ndt/tests.yml?branch=main&label=CI&style=flat-square)](https://github.com/groundlens-dev/ndt/actions)
 [![Docs](https://img.shields.io/badge/docs-docs.groundlens.dev%2Fndt-blue?style=flat-square)](https://docs.groundlens.dev/ndt)
 [![PyPI](https://img.shields.io/pypi/v/ndtracker?style=flat-square)](https://pypi.org/project/ndtracker/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square)](LICENSE)
 
 [Documentation](https://docs.groundlens.dev/ndt) · [Examples](examples/) · [Contributing](CONTRIBUTING.md)
 
