@@ -52,6 +52,6 @@ The following are out of scope:
 
 - **No secrets handled.** `ndt` stores and transmits no credentials or API keys.
 - **No network access for core functionality.** Tracking, metrics and export run entirely offline; network is only used by `pip` at install time.
-- **Type safety.** Type hints are enforced with mypy across the codebase.
+- **Type safety.** Static type checking with mypy runs in CI.
 - **Input validation.** Public functions validate their inputs before processing.
 - **Pinned CI actions.** GitHub Actions are pinned to commit SHAs, and supply-chain posture is monitored with OpenSSF Scorecard.
