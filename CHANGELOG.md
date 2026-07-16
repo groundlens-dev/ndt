@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 2.0.0 -- The validity harness
 
+### Changed
+- **Toolchain unified to `ruff`** (formatting, linting and import sorting), replacing
+  black + isort + flake8, and pinned to a single version. This ends the format-drift
+  that came from three unpinned formatters on an EOL Python. CI runs `ruff check` and
+  `ruff format --check`. Applied `raise ... from e` in the SVD error paths and cleaned
+  unused loop variables surfaced by the linter.
+
 ### Added
 - **`ndt.validity`**: a validity harness for transition detectors. Run any
   detector against ground-truth fixtures (`planted_transition`, `planted_multi`,
