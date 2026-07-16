@@ -20,9 +20,10 @@ and returns the step indices where it detects a transition. The built-in
 
 from __future__ import annotations
 
-from collections.abc import Callable
-from collections.abc import Sequence
 from dataclasses import dataclass
+from typing import Callable
+from typing import List
+from typing import Sequence
 
 import numpy as np
 
@@ -38,7 +39,7 @@ __all__ = [
 ]
 
 # A detector is any callable: values -> the step indices it flags as transitions.
-Detector = Callable[[Sequence[float]], "list[int]"]
+Detector = Callable[[Sequence[float]], List[int]]
 
 
 def jump_detector_as_callable(detector, metric_name: str = "metric") -> Detector:
